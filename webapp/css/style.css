@@ -5,3 +5,9 @@
 .sapUiDemoWT .myCustomText {
 	font-weight: bold;
 }
+
+.myPopover {
+	position:absolute;
+	top:0;
+	left:0;
+}
