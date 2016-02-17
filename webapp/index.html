@@ -32,7 +32,7 @@
 				})
 			}).placeAt("content");
 			var lang = getParameterByName("lang");
-			if (lang !== undefined && lang !== null) {
+			if (lang !== "") {
 				sap.ui.getCore().getConfiguration().setLanguage(lang);
 			}
 		});
