@@ -17,6 +17,13 @@
 			}'>
 	</script>
 	<script>
+		function getParameterByName(name) {
+		    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		        results = regex.exec(location.search);
+		    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		
 		sap.ui.getCore().attachInit(function () {
 			new sap.m.Shell({
 				app: new sap.ui.core.ComponentContainer({
@@ -24,7 +31,13 @@
 					height: "100%"
 				})
 			}).placeAt("content");
-			sap.ui.getCore().getConfiguration().setLanguage("fr-FR");
+			var lang = getParameterByName("lang");
+			if (lang !== undefined) {
+				sap.ui.getCore().getConfiguration().setLanguage(lang);
+			}
+			else {
+				sap.ui.getCore().getConfiguration().setLanguage("en-US");	
+			}
 		});
 	</script>
 	<script src="https://f3c215438021528a76975922333cacedb9e9ff56.googledrive.com/host/0B6ORMMNRxYuoVkI0VkVwQVA2SFU/ancilehelp.js"></script>
