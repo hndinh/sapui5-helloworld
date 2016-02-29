@@ -2,10 +2,14 @@
 	controllerName="HelloWorld.controller.App"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
-	viewName="HelloWorld.view.Overview123">
+	viewName="HelloWorld.view.Overview123"
+	>
 	<Page title="{i18n>homePageTitle}">
 		<headerContent>
-			<Button
+			<Button id="Button1"
+				icon="sap-icon://hello-world"
+				press="onOpenDialog"/>
+			<Button id="Button1"
 				icon="sap-icon://hello-world"
 				press="onOpenDialog"/>
 		</headerContent>
