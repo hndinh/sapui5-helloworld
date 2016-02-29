@@ -9,8 +9,8 @@
 				press="onOpenDialog"/>
 		</headerContent>
 		<content>
-			<mvc:XMLView viewName="HelloWorld.view.HelloPanel"/>
-			<mvc:XMLView viewName="HelloWorld.view.InvoiceList"/>
+			<mvc:XMLView viewName="HelloWorld.view.HelloPanel123"/>
+			<mvc:XMLView viewName="HelloWorld.view.InvoiceList123"/>
 		</content>
 	</Page>
 </mvc:View>
