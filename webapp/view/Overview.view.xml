@@ -6,10 +6,10 @@
 	>
 	<Page title="{i18n>homePageTitle}">
 		<headerContent>
-			<Button id="Button1"
+			<Button 
 				icon="sap-icon://hello-world"
 				press="onOpenDialog"/>
-			<Button id="Button1"
+			<Button 
 				icon="sap-icon://hello-world"
 				press="onOpenDialog"/>
 		</headerContent>
